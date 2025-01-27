@@ -53,7 +53,7 @@ I began by planning the layout and overall design to ensure a smooth user experi
 
 ## Preview Video
 
-[Watch the demo video here](https://raw.githubusercontent.com/Charishma116/E-COMMERCE-BEAUTY-PRODUCTS/main/images/Screen%20Recording%202025-01-27%20204426%20(1).mp4)
+[Watch the demo video here](https://drive.google.com/file/d/1xr2mEFyZ7rgY624k8t23qFHka5tqeqN6/view?usp=sharing)
 
 
 ## Installation Instructions
