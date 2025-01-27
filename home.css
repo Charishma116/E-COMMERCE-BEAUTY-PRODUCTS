@@ -1,0 +1,645 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #42806e;
+    border: 2px solid #daeee8; 
+    overflow-x: hidden;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #8bd0ba 
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #063b28;
+}
+
+.login-btn {
+    background: none;
+    
+    color: #7ab086;
+    border: 2px solid #415b55; 
+    font-size: 1rem;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #416954;
+    color: #2a4e32;
+}
+
+.top-icons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+.icon {
+    display: inline-block;
+    background-color: #c4e7d7;
+    color: #526861;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background-color: #8bd0ba 
+}
+
+.text-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1d3b2f;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #3a3f3d;
+}
+
+.shop-now {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-wrapper {
+    width: 456px;
+    height: 65vh;
+    overflow: hidden;
+    border-radius: 0 200px 200px 0;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('path-to-your-wave-pattern.svg') repeat-x;
+    background-size: contain;
+    z-index: -1;
+}
+
+.shop-now:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+/* Scroll Animation Classes */
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Beauty Section */
+.beauty-section.animate {
+    transition-delay: 0.2s;
+}
+
+/* New Arrival Section */
+.new-launch.animate {
+    transition-delay: 0.4s;
+}
+
+/* Founder Section */
+.founder-deal-section.animate {
+    transition-delay: 0.6s;
+}
+/* New Launch Section */
+.new-launch {
+    
+    text-align: center;
+    padding: 50px 20px;
+    color: #231d1d;
+    background-color: #d0f4e9
+}
+
+.new-launch h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto 0;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #e9f8f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #55282A;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.buy-now {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.buy-now:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #175647;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#arrow-left {
+    left: 10px;
+}
+
+#arrow-right {
+    right: 10px;
+}
+
+/* Beauty Section Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.beauty-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    margin-top: 50px;
+    background-color: #c0e7de;
+}
+
+.beauty-image-container {
+    position: relative;
+    width: 50%;
+}
+
+.beauty-main-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-top-left-radius: 100px;
+    overflow: hidden;
+}
+
+.beauty-decorative-box {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: #5cbea4;
+    z-index: 1;
+}
+
+.beauty-content {
+    width: 50%;
+    text-align: left;  /* Change from right to left to restore previous position */
+    position: relative; /* To position the dots within this container */
+}
+
+.beauty-h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #0e0e0e;
+}
+
+.beauty-p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #1e2929;
+}
+
+.beauty-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.beauty-stat-item {
+    flex: 1;
+    padding: 1.5rem;
+    background: #fbf1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.beauty-stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.beauty-stat-number {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #0c0c0c;
+}
+
+.beauty-stat-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    color: #452b2b;
+}
+
+/* Dots inside the beauty-content section aligned with the "Beauty Found" text */
+.beauty-dots-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    align-items: center; /* Align dots with text */
+    justify-content: flex-end; /* Align dots to the right */
+}
+
+.beauty-dot {
+    width: 4px;
+    height: 4px;
+    background-color: #384d45;
+    border-radius: 50%;
+}
+/* General button shadow */
+button, .login-btn, .shop-now, .buy-now {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: all 0.3s ease; /* For smooth shadow transition */
+}
+
+/* Button hover shadow */
+button:hover, .login-btn:hover, .shop-now:hover, .buy-now:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Optional: Adjust shadow for specific button types */
+.login-btn {
+    border: 1px solid #8dc6b8;
+}
+
+.shop-now {
+    background-color: #000;
+    color: #fff;
+}
+
+.buy-now {
+    background-color: #000;
+    color: #fff;
+}
+/* Founder Specific Styles */
+.founder-deal-section {
+    background: #d7f8eb;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.founder-deal-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.founder-deal-image-container {
+    flex: 1;
+    position: relative;
+}
+
+.founder-deal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.founder-deal-content h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.5rem;
+    color: #442727;
+    margin-bottom: 1rem;
+}
+
+.founder-subtitle {
+    font-size: 1.1rem;
+    color: #664444;
+    margin-bottom: 2rem;
+}
+
+.founder-timer {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.founder-timer-box {
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.founder-timer-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #27302f;
+}
+
+.founder-timer-label {
+    font-size: 0.9rem;
+    color: #242a28;
+}
+
+.founder-shop-button {
+    background: #34564d;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(68, 39, 39, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.founder-shop-button:hover {
+    background: #85c0af;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(68, 39, 39, 0.4);
+}
+
+.founder-shop-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(68, 39, 39, 0.2);
+}
+
+.founder-dots-pattern {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.founder-dot {
+    width: 4px;
+    height: 4px;
+    background-color: #184a3c;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+/* Testimonials Section */
+.founder-testimonials-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.founder-testimonials-title {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.5rem;
+    color: #eef6f4;
+    margin-bottom: 3rem;
+}
+
+.founder-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.founder-testimonial-card {
+    background: #FBF6F6;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.founder-testimonial-text {
+    font-style: italic;
+    color: #161414;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.founder-testimonial-author {
+    margin-top: 1rem;
+}
+
+.founder-author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.founder-author-name {
+    font-weight: bold;
+    color: #442727;
+    margin-bottom: 0.2rem;
+}
+
+.founder-author-title {
+    font-size: 0.9rem;
+    color: #664444;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.instagram-section {
+    width: 100%;
+}
+
+.instagram-gallery {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    height: 200px;
+}
+
+.gallery-image {
+    flex: 1;
+    min-width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover img {
+    transform: scale(1.1);
+}
+
+.instagram-banner {
+    background: white;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.instagram-banner p {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: #8bd0ba;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.footer-nav a {
+    color: rgb(17, 19, 18);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+.footer-nav a:hover {
+    opacity: 0.8;
+    
+}
+
+.copyright {
+    color: #8B8B8B;
+    font-size: 12px;
+    text-align: center;
+}
+/* Scroll Animation Classes */
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Beauty Section */
+.beauty-section.animate {
+    transition-delay: 0.2s;
+}
+
+/* New Arrival Section */
+.new-launch.animate {
+    transition-delay: 0.4s;
+}
+
+/* Founder Section */
+.founder-deal-section.animate {
+    transition-delay: 0.6s;
+}
+
+
