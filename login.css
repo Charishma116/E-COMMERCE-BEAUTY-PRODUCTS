@@ -1,0 +1,192 @@
+/* Importing Frank Ruhl Libre from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;  /* Default font for the body */
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.left, .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.left {
+    background-color: #c4e7d7;
+    text-align: center;
+}
+
+.right {
+    background-color: #42806e;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 400px;
+}
+
+.form-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #1b4232;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1a1010;
+}
+
+.toggle-text {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.right-side {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Apply Frank Ruhl Libre for the headings */
+.heading h2, .customer-section h2 {
+    font-family: 'Frank Ruhl Libre', serif; /* Apply Frank Ruhl Libre font */
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.heading p, .customer-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #2c3f3c;
+}
+
+/* The rows inside the frame */
+.reel-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap; 
+}
+
+.reel-row img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Animation for moving images */
+.reel-row:nth-child(odd) {
+    animation: reelRightToLeft 10s linear infinite;
+}
+
+.reel-row:nth-child(even) {
+    animation: reelLeftToRight 10s linear infinite;
+}
+
+/* Keyframes for animations */
+@keyframes reelRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes reelLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Styling for the extra rows with images */
+.extra-row.horizontal {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.extra-row.horizontal img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Animation for opposite direction (Reversed movement) */
+.extra-row:nth-child(odd) {
+    animation: reelRightToLeft 10s linear infinite;
+}
+
+.extra-row:nth-child(even) {
+    animation: reelLeftToRight 10s linear infinite;
+}
+
+@keyframes opposite-move {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
